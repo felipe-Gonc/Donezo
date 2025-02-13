@@ -25,7 +25,7 @@ type RemoveAction = {
 
 export type PostActions = AddAction | EditAction | RemoveAction;
 
-export const postreducers = (post: Post[], action: PostActions) =>{
+export const postReducers = (post: Post[], action: PostActions) =>{
     switch(action.type){
         case 'add':
             return [
