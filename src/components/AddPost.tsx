@@ -9,7 +9,7 @@ export const AddPost =()=>{
                 <p className="font-bold text-mb">Color</p>
                 <div className="flex gap-1">
                     {Color.map((e)=>(
-                        <button className={`w-6 h-6 rounded-full bg-green-200 border-2 ${e} border-purple-400 cursor-pointer`}></button>
+                        <button className={`w-6 h-6 rounded-full border-2 bg-${e}-200 border-purple-400 cursor-pointer`}></button>
                     ))}
                 </div>
             </div>

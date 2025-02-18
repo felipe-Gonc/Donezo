@@ -6,7 +6,7 @@ export const Header =()=>{
             >Donezo</h2>
 
             <div>
-                <button>Add</button>
+                <button className="bg-blue-400 border-2 border-blue-500 rounded-lg px-3 py-2">ADD</button>
             </div>
         </div>
     )
