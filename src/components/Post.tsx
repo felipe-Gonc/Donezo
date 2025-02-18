@@ -1,15 +1,22 @@
+"use client"
+
 import { PostContext } from "@/context/Post"
-import { Post } from "@/types/Posts"
 import { useContext } from "react"
 
-export const PostAdd =(e:Post)=>{
+export const Posts =()=>{
     const postCtx = useContext(PostContext);
 
     return(
-        <ul>
-            {postCtx?.post.map((e)=>(
-                <li></li>
-            ))}
-        </ul>
+        <div className="w-full h-full">
+            <ul>
+                {postCtx?.post.map((e)=>(
+                    <li 
+                        className="text-black"
+                        key={e.id}
+                    >{e.text}</li>
+                ))
+                }
+            </ul>
+        </div>
     )
 }
